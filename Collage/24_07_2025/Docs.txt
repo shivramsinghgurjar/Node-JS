@@ -10,8 +10,8 @@ Conclusion
 ----------------------------------------------------------------------------
 
 In server.js
-Import fs module => so that we import html file 
+Import fs module => so that we import html file.
 
 Conclusion
 ----------
-- We can write different html file and all file will we added/imported using fs module
+- We can write different html file and all file will we added/imported using fs module.
