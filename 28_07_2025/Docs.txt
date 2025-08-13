@@ -9,6 +9,6 @@ model
 
 these 5 thing made backend
 
-request => (validator) -> routes -> controller -> services -> validator -> model -> database
+request => routes -> controller -> services -> validator -> model -> database
 
 App.js
