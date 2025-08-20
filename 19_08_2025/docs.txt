@@ -1,3 +1,1 @@
-Creating E-commerce Web Application using 
-Frontend => html, css, js
-Backend => Node.js 
+Editing in E-commece application and check buyProduct request and response working fine.
