@@ -1,1 +1,1 @@
-Editing in E-commece application and check buyProduct request and response working fine.
+Defining .env for MonogoDB.
