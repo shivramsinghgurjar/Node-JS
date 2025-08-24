@@ -1,1 +1,2 @@
-Editing in E-commece application and check buyProduct request and response working fine.
+Editing in E-commece application.
+Check buyProduct request and response working fine.
