@@ -1,0 +1,11 @@
+In Node.js, streams are collections of data, which might not be available in full at once and don't have to fit in memory.
+
+Think of them as conveyor belts that move data from one place to another, allowing you to work with each piece as it arrives rather than waiting for the whole dataset.
+
+Streams are one of Node.js's most powerful features and are used extensively in:
+
+File system operations (reading/writing files)
+HTTP requests and responses
+Data compression and decompression
+Database operations
+Real-time data processing
