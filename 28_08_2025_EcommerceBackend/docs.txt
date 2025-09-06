@@ -1,1 +1,2 @@
 Complete Ecommerce Backed project with db.
+Add MongoDB URI form MongoDB Atlas
