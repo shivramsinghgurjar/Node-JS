@@ -1,0 +1,15 @@
+Web Sockets
+-----------
+- Real time communication we need web Sockets.
+
+- Web Sockets API Start in backend => Always listen => If It found the message then it will execute.
+
+
+WebSocket and Its Difference from HTTP
+Last Updated : 08 Aug, 2025
+HTTP and WebSocket are both ways for computers to talk to each other, but they work in different ways. HTTP is used for simple requests, like when you load a webpage, where the computer sends a request and the server replies, then the connection is closed. WebSocket keeps the connection open, allowing for real-time, two-way communication, making it great for things like live chats or online games where constant updates are needed. 
+
+Unlike HTTP’s request-response model, WebSockets allow real-time data exchange without repeated requests.
+Once established, the connection stays open until explicitly closed by either side.
+Reduces overhead of repeated HTTP headers, enabling faster message delivery.
+Typically uses port 80 (ws://) or 443 (wss:// for secure WebSockets) and supported by Most modern browsers and server frameworks.
