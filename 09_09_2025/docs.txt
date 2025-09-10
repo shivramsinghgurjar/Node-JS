@@ -1,4 +1,5 @@
 Install these depedencies before starting Sockets Project
+---------------------------------------------------------
 npm init -y
 npm i
 npm i socket.io             <= For Backend
