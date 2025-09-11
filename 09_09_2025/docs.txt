@@ -7,3 +7,18 @@ npm i socket.io-client      <= For Frontend
 
 
 docs link => https://www.w3schools.com/nodejs/nodejs_websockets.asp
+
+
+
+
+
+Introduction to WebSockets
+WebSockets provide a persistent connection between client and server, allowing for real-time, bidirectional communication.
+
+This is different from traditional HTTP, which follows a request-response model.
+
+Key Benefits of WebSockets
+Real-time updates: Instantly push data to clients
+Efficient: No need for repeated HTTP requests
+Bidirectional: Both client and server can send messages
+Low latency: Messages are sent immediately
