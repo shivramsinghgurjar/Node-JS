@@ -13,6 +13,8 @@ docs link => https://www.w3schools.com/nodejs/nodejs_websockets.asp
 
 
 Introduction to WebSockets
+--------------------------
+
 WebSockets provide a persistent connection between client and server, allowing for real-time, bidirectional communication.
 
 This is different from traditional HTTP, which follows a request-response model.
