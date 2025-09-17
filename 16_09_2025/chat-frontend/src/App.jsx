@@ -1,62 +1,82 @@
 import { useState, useEffect, useRef } from "react";
+import "./App.css";
 
 function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
-  const ws = useRef(null);
+  const socketRef = useRef(null);
+  const clientId = useRef(Date.now()); // unique id per tab
 
   useEffect(() => {
-    ws.current = new WebSocket("ws://localhost:5000");
+    socketRef.current = new WebSocket("ws://localhost:8080");
 
-    ws.current.onmessage = (event) => {
-      setMessages((prev) => [...prev, event.data]);
+    socketRef.current.onopen = () => {
+      console.log("✅ Connected to WebSocket server");
     };
 
-    ws.current.onclose = () => {
-      console.log("WebSocket disconnected");
+    socketRef.current.onmessage = (event) => {
+      try {
+        const data = JSON.parse(event.data);
+
+        // Only add messages from others or system
+        if (data.sender !== clientId.current || data.system) {
+          setMessages((prev) => [...prev, data]);
+        }
+      } catch (err) {
+        console.error("Error parsing message:", err);
+      }
+    };
+
+    socketRef.current.onclose = () => {
+      console.log("❌ Disconnected from WebSocket server");
     };
 
     return () => {
-      ws.current.close();
+      if (socketRef.current) socketRef.current.close();
     };
   }, []);
 
   const sendMessage = () => {
-    if (input.trim() && ws.current) {
-      ws.current.send(input);
+    if (input.trim() && socketRef.current?.readyState === WebSocket.OPEN) {
+      const msg = {
+        text: input,
+        timestamp: new Date().toLocaleTimeString(),
+        sender: clientId.current,
+      };
+
+      // Show message immediately
+      setMessages((prev) => [...prev, msg]);
+
+      // Send to server
+      socketRef.current.send(JSON.stringify(msg));
       setInput("");
     }
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-      <h2>Chat App</h2>
-      <div
-        style={{
-          border: "1px solid #ccc",
-          height: "300px",
-          overflowY: "scroll",
-          marginBottom: "10px",
-          padding: "10px",
-          borderRadius: "8px",
-        }}
-      >
-        {messages.map((msg, i) => (
-          <div key={i}>{msg}</div>
+    <div className="chat-container">
+      <h2>💬 Chat App</h2>
+      <div className="chat-box">
+        {messages.map((msg, idx) => (
+          <div
+            key={idx}
+            className={`chat-message ${msg.system ? "system" : ""}`}
+          >
+            <span className="time">{msg.timestamp}:</span>{" "}
+            <span className="text">{msg.text}</span>
+          </div>
         ))}
       </div>
 
-      <div style={{ display: "flex", gap: "10px" }}>
+      <div className="chat-input">
         <input
           type="text"
+          placeholder="Type a message..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-          style={{ flex: 1, padding: "8px" }}
         />
-        <button onClick={sendMessage} style={{ padding: "8px 16px" }}>
-          Send
-        </button>
+        <button onClick={sendMessage}>Send</button>
       </div>
     </div>
   );
