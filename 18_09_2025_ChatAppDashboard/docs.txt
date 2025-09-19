@@ -1,0 +1,4 @@
+Create a Chat App
+-----------------
+Frontend with the help of react.js
+Backend by using the concept of web socket using node.js
