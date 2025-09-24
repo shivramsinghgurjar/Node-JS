@@ -1,6 +1,6 @@
 Create a Chat App
 -----------------
-- This is similar to whatsapp but with some advantages in this Chat Application
+- This is similar to whatsapp but with some advantages in this Chat Application.
 - Frontend with the help of react.js.
 - Backend by using the concept of web socket using node.js.
-- For Database  iam using MonogoDB.
+- For Database i am using MonogoDB.
