@@ -1,3 +1,9 @@
+What is API Authentication?
+API authentication is the process of verifying the identity of clients accessing your Node.js APIs.
+
+This comprehensive guide covers various authentication methods, security best practices, and implementation patterns to help you secure your Node.js applications effectively.
+
+
 Command in teminal for generating JWT_SECRET
 --------------------------------------------
 node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
