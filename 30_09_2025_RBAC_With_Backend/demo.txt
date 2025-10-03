@@ -2,3 +2,4 @@ RBAC
 ----
 - Role-Based Access Control (RBAC) stands as a pivotal pillar in ensuring robust application security. 
 - Offering a systematic framework, RBAC empowers organisations and applications to meticulously govern and limit resource access in accordance with users’ designated roles.
+- By implementing RBAC, you can significantly enhance the security of your Node.js applications, control user access effectively, and reduce the risk of security breaches.
