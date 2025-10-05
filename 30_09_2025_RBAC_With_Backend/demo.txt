@@ -1,5 +1,5 @@
-RBAC:-
-------
+RBAC:- Role-Based Access Control
+--------------------------------
 - Role-Based Access Control (RBAC) stands as a pivotal pillar in ensuring robust application security. 
 - Offering a systematic framework, RBAC empowers organisations and applications to meticulously govern.
 - Limit resource access in accordance with users’ designated roles.

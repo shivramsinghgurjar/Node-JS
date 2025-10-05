@@ -1,3 +1,5 @@
+Streams:-
+---------
 In Node.js, streams are collections of data, which might not be available in full at once and don't have to fit in memory.
 
 Think of them as conveyor belts that move data from one place to another, allowing you to work with each piece as it arrives rather than waiting for the whole dataset.
