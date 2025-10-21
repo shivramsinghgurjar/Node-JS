@@ -10,7 +10,7 @@ node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
 Technology Used :-
 ------------------
-Node.js
+Node.js, Express.js
 
 Chatgpt link :-
 ---------------
