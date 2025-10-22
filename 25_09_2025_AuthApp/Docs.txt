@@ -8,6 +8,9 @@ Command in teminal for generating JWT_SECRET
 --------------------------------------------
 node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
+Technology Used :-
+------------------
+Node.js
 
 Chatgpt link
 ------------
