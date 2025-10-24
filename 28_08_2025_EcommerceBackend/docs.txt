@@ -1,2 +1,6 @@
 Complete Ecommerce Backed project with db.
 Add MongoDB URI form MongoDB Atlas.
+
+Technology Used :-
+------------------
+Node.js
