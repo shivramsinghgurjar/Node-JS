@@ -1,3 +1,7 @@
+Technology Used :-
+------------------
+Node.js
+
 NODE JS
 -------
 1) file oprations=> Perform read write operation with file.
