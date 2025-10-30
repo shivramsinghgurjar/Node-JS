@@ -1,1 +1,5 @@
 Defining .env for MonogoDB URI.
+
+Technology Used :-
+------------------
+Node.js
