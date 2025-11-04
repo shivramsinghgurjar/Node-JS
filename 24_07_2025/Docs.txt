@@ -12,6 +12,10 @@ Conclusion
 In server.js
 Import fs module => so that we import html file.
 
+Technology Used :-
+------------------
+Node.js
+
 Conclusion
 ----------
 - We can write different html file and all file will we added/imported using fs module.
