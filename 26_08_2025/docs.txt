@@ -1,1 +1,5 @@
 Create a product.js for E-commerce Backend.
+
+Technology Used :-
+------------------
+Node.js
