@@ -12,3 +12,8 @@ these 5 thing made backend
 request => routes -> controller -> services -> validator -> model -> database
 
 App.js
+
+
+Technology Used :-
+------------------
+Node.js
