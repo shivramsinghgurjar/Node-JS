@@ -3,3 +3,8 @@ npm init -y => initialize the node
 npm i => install stable version for external dependecies,modules, etc...
 
 https://nodejs.org/en => In this website we can visit a code that start a server(index.js file code)
+
+
+Technology Used :-
+------------------
+Node.js
