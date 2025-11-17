@@ -2,3 +2,8 @@ Folders
 -------
 views => We put all the component like header, footer, etc
 public => all component css part
+
+
+Technology Used :-
+------------------
+Node.js
