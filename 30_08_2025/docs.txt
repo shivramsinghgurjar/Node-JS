@@ -11,3 +11,7 @@ HTTP requests and responses
 Data compression and decompression
 Database operations
 Real-time data processing
+
+Technology Used :-
+------------------
+Node.js
