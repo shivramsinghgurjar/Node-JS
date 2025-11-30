@@ -3,4 +3,4 @@ Add MongoDB URI form MongoDB Atlas.
 
 Technology Used :-
 ------------------
-Node.js, Express.js
+Node.js, Express.js, MongoDB
