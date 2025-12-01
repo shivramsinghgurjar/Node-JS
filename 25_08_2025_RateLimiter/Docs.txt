@@ -8,4 +8,4 @@ user - 2
 
 Technology Used :-
 ------------------
-Node.js, Express.js
+Node.js, Express.js, MongoDB
