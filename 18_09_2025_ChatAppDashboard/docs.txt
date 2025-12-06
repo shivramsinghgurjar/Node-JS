@@ -7,4 +7,4 @@ Create a Chat App
 
 Technology Used :-
 ------------------
-Node.js, Express.js, Express.js
+Node.js, Express.js, MonogoDB
