@@ -6,4 +6,4 @@ If you want to process form data, you’ll need to add logic to parse the POST b
 
 Technology Used :-
 ------------------
-Node.js, Express.js, React.js
+Node.js, Express.js
